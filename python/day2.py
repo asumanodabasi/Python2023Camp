@@ -1,3 +1,6 @@
+from human import Human
+
+
 faiz=1,53
 vade="36"
 krediAdi="Taşit Kredisi"
@@ -74,3 +77,16 @@ def caculateAndReturn(fiyat,indirim):
     return fiyat-indirim
 yeniFiyat=caculateAndReturn(200,50)
 print(yeniFiyat)
+
+
+human1=Human("Enes")
+human1.talk("Merhaba")
+human1.walk() 
+print(human1)
+
+human2=Human("Halit")
+human2.talk("Selam")
+human2.walk()
+print(human2)
+
+Human("Asuman").talk("Merhaba")
