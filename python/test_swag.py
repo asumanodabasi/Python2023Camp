@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from time import sleep
 
 class Test_Swag:
-    def test_passwors_username(self):
+    def test_password_username(self):
         driver=webdriver.Chorme(ChromeDriverManager().install())
         driver.maximize_window()
         driver.get("https://www.saucedemo.com/")
@@ -14,7 +14,7 @@ class Test_Swag:
         errorMessage=driver.find_elements(By.CLASS_NAME,"error-button")        
         errorMessage.text= "Epic sadface: Username is required"
 
-    def null_password():
+    def null_password(self):
          driver=webdriver.Chorme(ChromeDriverManager().install())
          driver.maximize_window()
          driver.get("https://www.saucedemo.com/")
@@ -27,7 +27,7 @@ class Test_Swag:
          errorMessage=driver.find_elements(By.CLASS_NAME,"error-button")        
          errorMessage.text= "Epic sadface: Password is required"
 
-    def check_user():
+    def check_user(self):
          driver=webdriver.Chorme(ChromeDriverManager().install())
          driver.maximize_window()
          driver.get("https://www.saucedemo.com/")
@@ -42,7 +42,7 @@ class Test_Swag:
          errorMessage=driver.find_elements(By.CLASS_NAME,"error-button")        
          errorMessage.text= "Epic sadface: Sorry, this user has been locked out."
         
-    def button():
+    def button(self):
          driver=webdriver.Chorme(ChromeDriverManager().install())
          driver.maximize_window()
          driver.get("https://www.saucedemo.com/")
@@ -56,7 +56,7 @@ class Test_Swag:
          errorMessageBtn=driver.find_element(By.XPATH,"//*[@id='login_button_container']/div/form/div[3]/h3/button/svg")
          errorMessageBtn.click()
 
-    def user_login():
+    def user_login(self):
          driver=webdriver.Chorme(ChromeDriverManager().install())
          driver.maximize_window()
          driver.get("https://www.saucedemo.com/")
@@ -73,6 +73,12 @@ class Test_Swag:
          if(len(list)==6):
             print("giriş başarılı")
 
+test=Test_Swag()
+test.button()
+test.null_password()
+test.check_user()
+test.test_password_username()
+test.user_login()
 
 
 
