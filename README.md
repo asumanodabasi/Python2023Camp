@@ -1,5 +1,5 @@
-Decorators in the PyTestt
-
+Decorators in the PyTest
+  
 Dekoratörler diğer fonksiyonların işlevselliğini değiştiren fonksiyonlardır. Kodu kısaltırlar ve daha anlaşılır hale getirirler. Bir dekoratör aslında fonksiyon çağıran bir fonksiyodan başka bir şey değildir. Kendisinden önce, @ işareti ile geldiği fonksiyonu çalıştırmadan önce kendi içinde sarmanlanmış işleri yapar ve sonra kendisinden sonra gelen fonksiyonu çağırarak onun görevini yerine getirmesini sağlar.
 
 @pytest.fixture: Bu dekoratör, testler arasında ortak bir durum veya kaynak paylaşmak için kullanılır. Örneğin, testlerinizin bir veritabanına bağlanmasını gerektiriyorsa, bu dekoratörü kullanarak veritabanı bağlantısı oluşturabilirsiniz.
