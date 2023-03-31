@@ -18,3 +18,4 @@ maximize_window():Web sayfasını tam ekran yapar.
 quit():tarayıcıyı kapatır.
 forward():Sonraki sayfaya geçer.
 submit():form göndermek için kullanılır.
+
